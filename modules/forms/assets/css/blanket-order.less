@@ -1,0 +1,73 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+.blanket-order {
+
+    background: url('/image/home_backform_bg.jpg') top center no-repeat;
+    background-size: cover;
+
+    padding: 3rem 0 4rem;
+
+    .title{
+        color: white;
+        font-size: 3.4rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+
+        .yellow {
+            font-size: 4.2rem;
+            color: @yellow;
+            font-weight: 600;
+        }
+    }
+
+    label {
+        color: white;
+    }
+
+    input[type="text"] {
+        border-radius: 2rem;
+        height: 4rem;
+        line-height: 4rem;
+        padding-left: 2rem;
+    }
+
+    textarea {
+        border-radius: 2rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    .help-block-error {
+        color: @yellow;
+
+    }
+
+    .has-error .form-control {
+        border-color:  @yellow;
+    }
+
+    .politic-text {
+        color: white;
+    }
+
+    .file-caption{
+        display: block;
+        min-width: 20rem;
+    }
+
+    .btn-file {
+        .hidden-xs {
+            display: inline-block !important;
+
+            @media (max-width: 767px)
+                {
+                display: inline-block !important;
+            }
+
+
+        }
+    }
+
+
+
+}

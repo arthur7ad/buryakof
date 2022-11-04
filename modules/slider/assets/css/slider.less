@@ -1,0 +1,189 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+#main-slider {
+
+    /*    @media(max-width:@screen-xs) { 
+            padding-top: 4rem;
+            background: black;
+            margin-top: 4rem;
+            padding-top: 2rem;
+        }*/
+
+    /*    .owl-stage-outer {
+            @media(max-width:@screen-xs) { 
+                opacity: 0;
+            }
+        }
+        .owl-dots {
+            @media(max-width:@screen-xs) { 
+                opacity: 0;
+            }
+        }*/
+
+    .slide-4 {
+        background-position: 50% 50%  !important;
+
+        @media(max-width: 640px) { 
+            background-position: 40% 50% !important;
+
+            .col-xs-12 {
+                width: 70% !important;
+                margin-left: 30% !important;
+            }
+
+            .h2 {}
+            .comment {
+                font-size: 2rem  !important;
+            }
+        }
+
+        .btn-yellow {
+            display: none;
+        }
+    }
+
+
+
+    .owl-item {
+        .item-class {
+            display: -webkit-flex; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-around;
+            height: 400px;
+            background-size: cover !important;
+
+            @media(max-width:@screen-md) { 
+
+                height: 300px;
+            }
+
+            @media(max-width:@screen-sm) { 
+
+                height: 300px;
+            }
+
+            @media(max-width:@screen-xs) { 
+
+                height: 300px;
+            }
+        }
+    }
+
+    .content-wrap {
+
+
+
+        position: absolute;
+        width: 100%;
+        /*padding-top: 14rem;*/
+        text-align: right;
+        /*height: 100%;*/
+
+        .col-md-9 {
+            background: rgba(0,0,0,0.5);
+            padding: 2rem 6rem;
+            /*border-radius: 2rem;*/
+            /*box-shadow: 0 0  1rem black;*/
+
+            @media(max-width:@screen-sm) { 
+                padding: 2rem 3rem;
+            }
+
+        }
+
+        @media(max-width:@screen-md) { 
+            /*background: transparent;*/ 
+        }
+
+        @media(max-width:@screen-sm) { 
+            /*background: transparent;*/ 
+        }
+
+        @media(max-width:@screen-xs) { 
+            /*background: transparent;*/ 
+        }
+
+        .h2, .comment {
+            color: white;
+        }
+
+        .top-title {
+            font-size: 4.4rem;
+            color: @yellow;
+
+            @media(max-width:@screen-xs) { 
+                font-size: 3rem;
+            }
+        }
+
+        .h2 {
+            font-size: 3.6rem;
+            font-weight: 600;
+
+            @media(max-width:@screen-xs) { 
+                font-size: 1.8rem;
+            }
+        }
+
+        .comment {
+            font-size: 2.4rem;
+            font-weight: 400;
+           // letter-spacing: .8rem;
+            //text-transform: uppercase;
+
+            @media(max-width:@screen-xs) { 
+                font-size: 2.8rem;
+            }
+        }
+
+        /*        .btn {
+                    position: absolute;
+                    bottom: 2rem;
+                    rigght: 0;
+                }*/
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 3rem;
+
+    }
+    /*
+        .owl-dot {
+            span {
+                height: 7.4rem;
+                width: 2px;
+                background: white;
+                float: left;
+                border-radius: inherit;
+                margin: 0;
+            }
+    
+            &.active {
+                span {
+                    width: 6px;
+                }
+            }
+        }
+    
+        .owl-dot {
+            &:before {
+                counter-increment: dots;
+                content: '0'counter(dots);
+                font-size: 3.2rem; 
+                line-height: 7.4rem;
+                opacity: .5;
+                color: white;
+                font-weight: bold;
+                padding-left: 1rem;
+            }
+            &.active:before {
+                font-size: 5.2rem;
+                opacity: 1;
+            }
+        }*/
+
+}
+
+

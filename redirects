@@ -1,0 +1,551 @@
+
+	rewrite ^/(.*)/$ /$1 permanent;
+    if ( $request_uri ~ ^/services/pereezdy/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-voronezh/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/kvartirnyj-pereezd/$) {
+        rewrite ^ /pereezdy/kvartirnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-domashnij/$) {
+        rewrite ^ /pereezdy/domashniy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/services/dachnyj-pereezd/$) {
+        rewrite ^ /pereezdy/dachnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-mebeli/$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-veshhej/$) {
+        rewrite ^ /gruzoperevozki/perevozka-veschey? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-po-oblasti/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-po-voronezhskoj-oblasti/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-po-rossii/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-v-drugoj-gorod/$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-voennosluzhashhih/$) {
+        rewrite ^ /pereezdy/pereezd-voennosluzhaschih? permanent;
+    }
+    if ( $request_uri ~ ^/kalkulyator-po-pereezdam/$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/upakovka/$) {
+        rewrite ^ /gruzchiki/upakovka? permanent;
+    }
+    if ( $request_uri ~ ^/services/takelazhnye-raboty/$) {
+        rewrite ^ /gruzchiki/takelazh? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzoperevozki/$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzoperevozki-mezhgorod/$) {
+        rewrite ^ /gruzoperevozki/perevozki-mezhdugorodnye? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzoperevozki-po-oblasti/$) {
+        rewrite ^ /gruzoperevozki/perevozki-po-oblasti? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-oborudovaniya/$) {
+        rewrite ^ /gruzchiki/perevozka-stankov? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzoperevozki-po-rossii/$) {
+        rewrite ^ /gruzoperevozki/perevozki-po-rossii? permanent;
+    }
+    if ( $request_uri ~ ^/services/poputno-i-dogruzom/$) {
+        rewrite ^ /gruzoperevozki/perevozki-poputnye? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzovoe-taksi/$) {
+        rewrite ^ /gruzoperevozki/gruzovoe-taksi? permanent;
+    }
+    if ( $request_uri ~ ^/services/dostavka/$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/kalkulyator-po-perevozkam/$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/services/uslugi-gruzchikov/$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/services/razgruzka-i-pogruzka-vagonov/$) {
+        rewrite ^ /gruzchiki/razgruzka-vagonov? permanent;
+    }
+    if ( $request_uri ~ ^/services/razgruzka-kontejnerov/$) {
+        rewrite ^ /gruzchiki/razgruzka-konteynerov? permanent;
+    }
+    if ( $request_uri ~ ^/services/razgruzka-fur-gazelej/$) {
+        rewrite ^ /gruzchiki/razgruzka-fur? permanent;
+    }
+    if ( $request_uri ~ ^/services/podem-strojmaterialov/$) {
+        rewrite ^ /gruzchiki/pod-em-stroy-materialov? permanent;
+    }
+    if ( $request_uri ~ ^/services/vynos-stroitelnogo-musora/$) {
+        rewrite ^ /gruzchiki/vynos-stroitel-nogo-musora? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzchiki-na-pereezd/$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/services/sborka-razborka-mebeli/$) {
+        rewrite ^ /gruzchiki/sborka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/services/razborka-mebeli/$) {
+        rewrite ^ /gruzchiki/sborka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/services/upakovka-mebeli/$) {
+        rewrite ^ /gruzchiki/upakovka? permanent;
+    }
+    if ( $request_uri ~ ^/services/pogruzka-byt-tehniki/$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzchiki-s-transportom/$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-pianino/$) {
+        rewrite ^ /gruzchiki/perevozka-pianino? permanent;
+    }
+    if ( $request_uri ~ ^/services/pogruzka-gabaritnoj-mebeli/$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/services/pogruzka-sejfa/$) {
+        rewrite ^ /gruzchiki/perevozka-seyfa? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-oborudovaniya/$) {
+        rewrite ^ /gruzchiki/perevozka-stankov? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-bankomatov/$) {
+        rewrite ^ /gruzchiki/perevozka-bankomata? permanent;
+    }
+    if ( $request_uri ~ ^/services/uborka-snega/$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/services/zemlyanye-raboty/$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/services/gruzchik-na-chas/$) {
+        rewrite ^ /gruzchiki/na-chas? permanent;
+    }
+    if ( $request_uri ~ ^/services/uslugi-raznorabochih/$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-ofisnyj/$) {
+        rewrite ^ /pereezdy/ofisnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-restorana/$) {
+        rewrite ^ /pereezdy/pereezd-kafe? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-magazina/$) {
+        rewrite ^ /pereezdy/pereezd-magazina? permanent;
+    }
+    if ( $request_uri ~ ^/services/pereezd-sklada/$) {
+        rewrite ^ /pereezdy/pereezd-sklada? permanent;
+    }
+    if ( $request_uri ~ ^/kalkulyator-dlya-yur-licz/$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/services/dostavka-dlya-magazinov/$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/services/fulfillment/$) {
+        rewrite ^ /dlya-yur-lic/fulfilment? permanent;
+    }
+    if ( $request_uri ~ ^/services/dostavka-dlya-internet-magazinov/$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/projects/poputno-i-dogruzom/$) {
+        rewrite ^ /gruzoperevozki/perevozki-poputnye? permanent;
+    }
+    if ( $request_uri ~ ^/services/hranenie-na-sklade/$) {
+        rewrite ^ /dlya-yur-lic/sklad-otvetvennogo-hranenniya? permanent;
+    }
+    if ( $request_uri ~ ^/services/autsorsing-dlya-yur-licz/$) {
+        rewrite ^ /dlya-yur-lic/autsorsing? permanent;
+    }
+    if ( $request_uri ~ ^/services/autsorsing/$) {
+        rewrite ^ /dlya-yur-lic/autsorsing? permanent;
+    }
+    if ( $request_uri ~ ^/avtopark/$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/mashiny-dlya-pereezda/$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/gazeli-dlya-pereezda/$) {
+        rewrite ^ /avtopark/gazeli? permanent;
+    }
+    if ( $request_uri ~ ^/mashiny-dlya-perevozok/$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/gazeli-dlya-perevozok/$) {
+        rewrite ^ /avtopark/gazeli? permanent;
+    }
+    if ( $request_uri ~ ^/kontakty/$) {
+        rewrite ^ /kontakty? permanent;
+    }
+    if ( $request_uri ~ ^/o-kompanii/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/portfolio/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/reviews/$) {
+        rewrite ^ /o-kompanii/otzyvy? permanent;
+    }
+    if ( $request_uri ~ ^/nashi-partnery/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/nashi-tarify/$) {
+        rewrite ^ /tarify? permanent;
+    }
+    if ( $request_uri ~ ^/reviews/kubrak-olga/$) {
+        rewrite ^ /o-kompanii/otzyvy? permanent;
+    }
+    if ( $request_uri ~ ^/reviews/otzyv-2/$) {
+        rewrite ^ /o-kompanii/otzyvy? permanent;
+    }
+    if ( $request_uri ~ ^/portfolio/upakovka-dlya-pereezda-i-hraneniya/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/portfolio/453/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/reviews/otzyv-1/$) {
+        rewrite ^ /o-kompanii/otzyvy? permanent;
+    }
+    if ( $request_uri ~ ^/portfolio/key-1/$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-medicinskogo-oborudovaniya/$) {
+        rewrite ^ /gruzchiki/perevozka-med-oborudovaniya? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-stankov/$) {
+        rewrite ^ /gruzchiki/perevozka-stankov? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-koncertnogo-oborudovaniya/$) {
+        rewrite ^ /gruzchiki/takelazh? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-holodilnika/$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/category/posts/$) {
+        rewrite ^ /article? permanent;
+    }
+    if ( $request_uri ~ ^/dokumenty/$) {
+        rewrite ^ /o-kompanii/dokumenty? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/$) {
+        rewrite ^ /o-kompanii/vakansii? permanent;
+    }
+    if ( $request_uri ~ ^/mashina-dlya-pereezda-kakoj-ona-dolzhn/$) {
+        rewrite ^ /article/mashina-dlya-pereezda-kakoj-ona-dolzhn? permanent;
+    }
+    if ( $request_uri ~ ^/zadacha-organizaczii-v-osobennosti-zhe-s/$) {
+        rewrite ^ /article/zadacha-organizaczii-v-osobennosti-zhe-s? permanent;
+    }
+    if ( $request_uri ~ ^/kak-bystro-i-pravilno-sobrat-veshhi-dl/$) {
+        rewrite ^ /article/kak-bystro-i-pravilno-sobrat-veshhi-dl? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/gruzchik-ehkspeditor/$) {
+        rewrite ^  /o-kompanii/vakansii/gruzchik-ehkspeditor? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/gruzchik/$) {
+        rewrite ^  /o-kompanii/vakansii/gruzchik? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/voditel/$) {
+        rewrite ^  /o-kompanii/vakansii/voditel? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/takelazhnik/$) {
+        rewrite ^  /o-kompanii/vakansii/takelazhnik? permanent;
+    }
+    if ( $request_uri ~ ^/vakansii/gruzchik-komplektovshchik/$) {
+        rewrite ^ /o-kompanii/vakansii/gruzchik-komplektovshchik? permanent;
+    }
+    if ( $request_uri ~ ^/dokumenty/politika-obrabotki-personalnyh-dannyh/$) {
+        rewrite ^  /o-kompanii/dokumenty/politika-obrabotki-personal-nyh-dannyh? permanent;
+    }
+    if ( $request_uri ~ ^/dokumenty/liczenziya-na-vedenie-deyatelnosti/$) {
+        rewrite ^  /o-kompanii/dokumenty/liczenziya-na-vedenie-deyatelnosti? permanent;
+    }
+    if ( $request_uri ~ ^/dokumenty/publichnaya-oferta/$) {
+        rewrite ^  /o-kompanii/dokumenty/publichnaya-oferta? permanent;
+    }
+    if ( $request_uri ~ ^/dokumenty/polzovatelskoe-soglashenie/$) {
+        rewrite ^  /o-kompanii/dokumenty/polzovatelskoe-soglashenie? permanent;
+    }
+    if ( $request_uri ~ ^/politika$) {
+        rewrite ^  /o-kompanii/dokumenty/politika-obrabotki-personal-nyh-dannyh? permanent;
+    }
+    if ( $request_uri ~ ^/o-kompanii/avtopark/$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=472$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=722$) {
+        rewrite ^ /o-kompanii/dokumenty? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=732$) {
+        rewrite ^ /o-kompanii/dokumenty/liczenziya-na-vedenie-deyatelnosti? permanent;
+    }
+    if ( $request_uri ~ ^/\dokumenty/politika-obrabotki-personalnyh-dannyh$) {
+        rewrite ^ /o-kompanii/dokumenty/politika-obrabotki-personal-nyh-dannyh? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=728$) {
+        rewrite ^ /o-kompanii/dokumenty/politika-obrabotki-personal-nyh-dannyh? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=735$) {
+        rewrite ^ /o-kompanii/dokumenty/polzovatelskoe-soglashenie? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=730$) {
+        rewrite ^ /o-kompanii/dokumenty/publichnaya-oferta? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1257$) {
+        rewrite ^ /avtopark/gazeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1298$) {
+        rewrite ^ /avtopark/gazeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=132$) {
+        rewrite ^ /article/kak-bystro-i-pravilno-sobrat-veshhi-dl? permanent;
+    }
+    if ( $request_uri ~ ^/kalkulyator/$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1034$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=665$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=926$) {
+        rewrite ^ /calc? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=38$) {
+        rewrite ^ /kontakty? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=135$) {
+        rewrite ^ /article/mashina-dlya-pereezda-kakoj-ona-dolzhn? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1276$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1312$) {
+        rewrite ^ /avtopark? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=232$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=536$) {
+        rewrite ^ /tarify? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=45$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=453$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=127$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=184$) {
+        rewrite ^ /o-kompanii? permanent;
+    }
+    if ( $request_uri ~ ^/projects/buryakov-mezhgorod/$) {
+        rewrite ^ /gruzoperevozki/perevozki-poputnye? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=586$) {
+        rewrite ^ /gruzoperevozki/perevozki-poputnye? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1156$) {
+        rewrite ^ /dlya-yur-lic/autsorsing? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=755$) {
+        rewrite ^ /pereezdy/dachnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1098$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/services/dostavka-pod-klyuch/$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=857$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=858$) {
+        rewrite ^ /dlya-yur-lic/fulfilment? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1241$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1102$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1145$) {
+        rewrite ^ /gruzchiki/na-chas? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=680$) {
+        rewrite ^ /gruzoperevozki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1290$) {
+        rewrite ^ /gruzoperevozki/perevozki-mezhdugorodnye? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1293$) {
+        rewrite ^ /gruzoperevozki/perevozki-po-oblasti? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1075$) {
+        rewrite ^ /gruzoperevozki/perevozki-po-rossii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1087$) {
+        rewrite ^ /gruzoperevozki/gruzovoe-taksi? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=269$) {
+        rewrite ^ /dlya-yur-lic/sklad-otvetvennogo-hranenniya? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=750$) {
+        rewrite ^ /pereezdy/kvartirnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=103$) {
+        rewrite ^ /pereezdy/domashniy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=835$) {
+        rewrite ^ /pereezdy/pereezd-magazina? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=105$) {
+        rewrite ^ /pereezdy/ofisnyy-pereezd? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1231$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1238$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1235$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=842$) {
+        rewrite ^ /pereezdy/pereezd-kafe? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=838$) {
+        rewrite ^ /pereezdy/pereezd-sklada? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=248$) {
+        rewrite ^ /pereezdy/pereezd-voennosluzhaschih? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1215$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1203$) {
+        rewrite ^ /pereezdy? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=845$) {
+        rewrite ^ /gruzchiki/perevozka-bankomata? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=807$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=853$) {
+        rewrite ^ /gruzchiki/takelazh? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=789$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=806$) {
+        rewrite ^ /gruzchiki/perevozka-med-oborudovaniya? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=805$) {
+        rewrite ^ /gruzchiki/perevozka-stankov? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=803$) {
+        rewrite ^ /gruzchiki/perevozka-pianino? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=852$) {
+        rewrite ^ /gruzchiki/perevozka-stankov? permanent;
+    }
+    if ( $request_uri ~ ^/services/perevozka-veshhej$) {
+        rewrite ^ /gruzoperevozki/perevozka-veschey? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1099$) {
+        rewrite ^ /gruzchiki/pod-em-stroy-materialov? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1125$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1128$) {
+        rewrite ^ /gruzoperevozki/perevozka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1129$) {
+        rewrite ^ /gruzchiki/perevozka-seyfa? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1198$) {
+        rewrite ^ /gruzoperevozki/perevozki-poputnye? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=759$) {
+        rewrite ^ /gruzchiki/sborka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1121$) {
+        rewrite ^ /gruzchiki/razgruzka-fur? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1093$) {
+        rewrite ^ /gruzchiki/razgruzka-vagonov? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1118$) {
+        rewrite ^ /gruzchiki/razgruzka-konteynerov? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=268$) {
+        rewrite ^ /gruzchiki/sborka-mebeli? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=270$) {
+        rewrite ^ /gruzchiki/takelazh? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1134$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1101$) {
+        rewrite ^ /gruzchiki/upakovka? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=796$) {
+        rewrite ^ /gruzchiki? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1152$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1100$) {
+        rewrite ^ /gruzchiki/vynos-stroitel-nogo-musora? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=1139$) {
+        rewrite ^ /gruzchiki/uslugi-raznorabochih? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=693$) {
+        rewrite ^ /gruzchiki/upakovka? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=577$) {
+        rewrite ^ /o-kompanii/vakansii? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=818$) {
+        rewrite ^ /o-kompanii/vakansii/gruzchik? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=816$) {
+        rewrite ^ /o-kompanii/vakansii/gruzchik-ehkspeditor? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=814$) {
+        rewrite ^ /o-kompanii/vakansii/gruzchik-komplektovshchik? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=810$) {
+        rewrite ^ /o-kompanii/vakansii/takelazhnik? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=808$) {
+        rewrite ^ /o-kompanii/vakansii/voditel? permanent;
+    }
+    if ( $request_uri ~ ^/\?p=118$) {
+        rewrite ^ /article/zadacha-organizaczii-v-osobennosti-zhe-s? permanent;
+    }
+    if ($request_uri ~ "\?$") {
+    return 301 $uri;
+    }

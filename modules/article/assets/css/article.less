@@ -1,0 +1,59 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+.article-index {
+
+    margin-bottom: 4rem;
+
+    .article-item {
+
+        .panel {
+            /*box-shadow: 0 0 1rem rgba(0,0,0,0.5);*/
+            min-height: 22rem;
+
+            .panel-heading {
+                background-color: white;
+                overflow: hidden;
+                border-bottom: 1px solid @green-light;
+
+                .name-wrap {
+                    padding-top: .6rem;
+                    font-size: 1.8rem;
+                    color: @green;
+
+                }
+
+                .date-wrap {
+                    padding-top: .6rem;
+                    color: @gray-light;
+                    font-size: 1.6rem;
+                }
+
+                button {
+                    color: @yellow;
+                    font-weight: 600;
+                    position: relative;
+                    /*left: 1rem;*/
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                    border-radius: .5rem;
+                }
+            }
+
+            .panel-body {
+                color: @gray-light;
+                
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+            /*            &:hover {
+                            height: auto;
+                        }*/
+        }
+    }
+}
+
+.content.article {
+    min-height: 40rem;
+}

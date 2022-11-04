@@ -1,0 +1,316 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+.gruzoperevozki-title {
+    text-align: center;
+    color: @green-light;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+#gruzoperevozki-tab, #pereezdi-tab {
+
+    border-bottom: inherit;
+    margin: 3rem 0 1rem;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    @media(max-width:@screen-sm) { 
+        flex-flow: column;
+
+        li {
+            a {
+                padding: 1.2rem 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    li {
+        a {
+
+            border:1px solid @green-light;
+            background: inherit;
+            border-radius: 4rem;
+            color: @green-light;
+            font-weight: 500;
+            padding: 2rem 8rem;
+            font-size: 2rem;
+
+        }
+
+        &.active,:hover {
+            a {
+                border:inherit;
+                background: @green-light;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+#tab-mezh-slider, #tab-gorod-slider {
+
+    padding-top: 2rem;
+
+    .slick-list {
+        padding-top: 2rem !important;
+    }
+
+    .item-wrap {
+
+        padding: 0 1rem;
+
+
+        .panel {
+
+            cursor: pointer;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+            min-height: 43rem;
+            border-radius: 1rem;
+
+            .panel-heading {
+
+
+
+                position: relative;
+                background-color: inherit;
+                border-bottom: 1px solid @green-light;
+
+                .title {
+                    font-size: 2.2rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: @gray;
+                    text-align: center;
+                }
+                .price {
+                    font-size: 2.8rem;
+                    color:@green-light;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .text1 {
+
+                    pre {
+                        background: inherit;
+                        border: inherit;
+                        font-size: 1.6rem;
+                    }
+                }
+                .text2 {
+                    color: @green-light;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+
+                .disclaimer {
+                    margin-top: 1rem;
+                }
+            }
+
+            .panel-body {
+
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                min-height: 27rem;
+
+
+                img {
+                    /*margin-bottom: 2rem;*/
+                }
+
+                button {
+                    padding-left: 4rem; 
+                    padding-right: 4rem; 
+                } 
+            }
+
+            &:hover {
+                .panel-heading {
+                    background-color:  @green-light;
+                    color: white;
+
+                    .title {
+                        color: white;
+                    }
+
+                    .price {
+                        color: @yellow;
+                    }
+
+                    .text2 {
+                        color: @yellow;
+                    }
+
+                    pre {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
+
+#pereezdi {
+
+
+    .tab-content {
+        padding-top: 4rem;
+    }
+}
+
+#pereezdi-slider {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#gruzchiki-slider, #pereezdi, #pereezdi-slider, #takelazh-slider, #vyvoz_musora-slider {
+    .slick-list {
+        padding-top: 2rem !important;
+    }
+
+    .item-wrap {
+
+        padding: 0 1rem;
+
+
+        .panel {
+
+            cursor: pointer;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+            border-radius: 1rem;
+
+            .panel-heading {
+
+                .akcia {
+                    position: relative;
+                    overflow: hidden;
+                    width: 12rem;
+                    height: 12rem;
+                    color: white;
+                    background: red;
+                    padding-top: 10rem;
+                    text-align: center;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg); 
+                    transform: rotate(45deg);
+                    top: -7rem;
+                    right: -30rem;
+                    /*left: 1rem;*/
+
+                    @media(max-width:@screen-lg) {
+
+                        right: -24rem;
+                    }
+
+                    @media(max-width:@screen-md) {
+
+                        right: -28rem;
+                    }
+
+                    @media(max-width:@screen-sm) {
+
+                        left: -8rem;
+                        -webkit-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg); 
+                        transform: rotate(-45deg);
+                    }
+
+
+                }
+
+                overflow: hidden;
+                background-color: inherit;
+                min-height: 7em;
+                border-bottom: 1px solid white;
+
+                .title {
+                    font-size: 2.2rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: @gray;
+                    text-align: center;
+
+
+                    &.akcia-title {
+                        margin-top: -12rem;
+                    }
+                }
+                .price {
+                    font-size: 2.8rem;
+                    color:@green-light;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+            }
+
+            .panel-body {
+
+                min-height: 7rem;
+
+
+                .text1 {
+                    color: @green-light;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+
+                .disclaimer {
+                    margin-top: 1rem;
+                }
+
+            }
+
+            .panel-footer {
+
+                border-top: 1px solid @green-light;
+                background-color: inherit;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+
+                button {
+                    padding-left: 4rem; 
+                    padding-right: 4rem; 
+                } 
+            }
+
+            &:hover {
+                .panel-heading, .panel-body {
+                    background-color:  @green-light;
+                    color: white;
+
+                    .title {
+                        color: white;
+                    }
+
+                    .price {
+                        color: @yellow;
+                    }
+
+                    .text1 {
+                        color: white;
+                    }
+
+                    pre {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,78 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+
+.reviews {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#review-slider {
+    .review-item {
+        padding: 0 15px;
+    }
+}
+
+.reviews-index, #review-slider {
+
+    margin-bottom: 4rem;
+
+    .review-item {
+
+        outline: none !important;
+        border: 0 !important;
+        font-size: 16px !important;
+
+        .panel {
+            box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+            min-height: 24rem;
+
+            .panel-heading {
+                background-color: @green-light;
+                color: white;
+                overflow: hidden;
+
+                .name-wrap {
+                    padding-top: .6rem;
+                }
+
+                .date-wrap {
+                    padding-top: .6rem;
+                }
+
+                button {
+                    color: @yellow;
+                    font-weight: 600;
+                    position: relative;
+                    /*left: 1rem;*/
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                    border-radius: .5rem;
+                }
+            }
+
+                        .panel-body.youtube, .panel-body.image {
+                            padding:0;
+                        }
+
+            /*            &:hover {
+                            height: auto;
+                        }*/
+        }
+    }
+}
+
+.d-readmore {
+    /*line-height: 1.8;*/
+    min-height: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.d-readmore_btn { 
+    /*border-bottom: 2px dashed #000;*/ 
+    /*color: #ff0000;*/ 
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+
+}

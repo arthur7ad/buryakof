@@ -1,0 +1,73 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+.calc {
+    padding: 4rem 2rem 1rem;
+    border-radius: 5rem;
+    background: @brand-primary; 
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+    z-index: 1;
+
+    @media(max-width:@screen-sm) {
+        /*position:inherit;*/
+        display: none;
+    }
+
+    #calc-result-modal {
+        z-index: 100;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 2.6rem !important;
+        margin: 0 0 2rem;
+        color: white;
+    }
+
+    .control-label {
+        color: white;
+    }
+
+    label {
+        &.active, &.focus, &:focus {
+            background: @brand-secondary !important;
+            background-color: @brand-secondary !important;
+        }
+    }
+
+    .control-label {
+        width: 100%;
+    }
+
+    .select2-selection--single {
+        border-radius: 3rem !important;
+    }
+
+    .btn-scelet {
+        border: 1px solid @brand-secondary;
+        color: @brand-secondary;
+        border-radius: 5rem;
+        padding: 1rem 3rem;
+        background: inherit;
+    }
+
+    .select2-container {
+        z-index: 3000;
+    }
+
+    .result {
+        margin: 2rem 0;
+        min-height: 2rem;
+    }
+}
+
+.calc-min {
+    .calc {
+        @media(max-width:@screen-sm) {
+            /*position:inherit;*/
+            display: block !important;
+        }
+
+    }
+}

@@ -1,0 +1,168 @@
+@import 'bootstrap/variables';
+
+
+.all_review {
+    display: block;
+    padding:20px 0;
+
+    .owl-stage-outer{
+        overflow:hidden;
+    }
+    .owl-item {
+        float:left;
+        text-align:center;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .disabled {
+        display:none;
+    }
+
+}
+.col-xs-five,
+.col-sm-five,
+.col-md-five,
+.col-lg-five {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-five {
+    width: 20% !important;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-five {
+        width: 20% !important;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-five {
+        width: 20% !important;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-five {
+        width: 20% !important;
+        float: left;
+    }
+}
+
+.footer {
+
+    background: @gray;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-size: 1.2rem;
+    /*margin-top: 6rem;*/
+
+    @media(max-width:@screen-sm) { 
+
+        padding-bottom: 10rem;
+    }
+
+    .logo-wrap {
+        @media(max-width:@screen-md) { 
+
+            img {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+    .menu-payment {
+        ul img {
+            height: 62px;
+        }
+
+         ul p {
+            text-transform: uppercase;
+            padding-top: 5px;
+        }
+        @media(max-width:@screen-xs) {
+            padding-bottom:20px;
+
+            .title {
+                text-align:center;
+            }
+            li{
+                float:left;
+                width:33%;
+                text-align:center;
+            }
+        }
+        }
+    .menu-1, .menu-2 {
+        @media(max-width:@screen-md) { 
+            text-align: center;
+        }
+    }
+
+    &.margin-top {
+        margin-top: 8rem;
+    }
+
+    a {
+        color: white;
+    }
+
+    .work-time {
+
+
+        @media(max-width:@screen-sm) { 
+            margin-bottom: 3rem;
+        }
+    }
+
+    .title {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: @green-light;
+        font-weight: 500;
+
+        &::after {
+            display: block;
+            height: 1px; 
+            width: 5rem;
+            background: #ccc;
+        }
+    }
+
+    .right-side {
+
+        .btn-yellow {
+            color: black;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-calc {
+            min-width: 205px;
+            border: 2px solid @yellow;
+            background-color: inherit;
+            color: @yellow;
+            margin-bottom: 2rem;
+        }
+        @media(max-width:@screen-xs) {
+            .btn-yellow {
+                float:left;
+                width:190px;
+            }
+            .btn-calc {
+                height:42px;
+                min-width:130px;
+            }
+        }
+    }
+
+}

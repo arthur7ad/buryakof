@@ -1,0 +1,112 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+#cases-slider {
+    .item-wrap {
+
+        padding: 0 1rem;
+
+        .item {
+            .image {
+                height: 20rem;
+                background-size: cover !important;
+            }
+
+            .title {
+                font-size: 1.8rem;
+                color: @green;
+                font-weight: 500;
+                text-align:center;
+            }
+
+            .date {
+                font-size: 1.8rem;
+            }
+
+            .text {
+                color: #bcbdbc;
+            }
+
+            .row {
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        /*width: 100%;*/
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 30%;
+        /*left: 50%;*/
+        /*height: 2rem;*/
+
+        cursor: pointer;
+
+        &.arr-right {
+            right: -4rem;
+        }
+
+        &.arr-left {
+            left: -2rem;
+        }
+    }
+}
+
+.article-index {
+
+    margin-bottom: 4rem;
+
+    .article-item {
+
+        .panel {
+            /*box-shadow: 0 0 1rem rgba(0,0,0,0.5);*/
+            min-height: 22rem;
+
+            .panel-heading {
+                background-color: white;
+                overflow: hidden;
+                border-bottom: 1px solid @green-light;
+
+                .name-wrap {
+                    padding-top: .6rem;
+                    font-size: 1.8rem;
+                    color: @green;
+
+                }
+
+                .date-wrap {
+                    padding-top: .6rem;
+                    color: @gray-light;
+                    font-size: 1.6rem;
+                }
+
+                button {
+                    color: @yellow;
+                    font-weight: 600;
+                    position: relative;
+                    /*left: 1rem;*/
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                    border-radius: .5rem;
+                }
+            }
+
+            .panel-body {
+                color: @gray-light;
+                
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+            /*            &:hover {
+                            height: auto;
+                        }*/
+        }
+    }
+}
+
+.content.article {
+    //min-height: 40rem;
+}

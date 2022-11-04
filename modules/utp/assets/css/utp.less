@@ -1,0 +1,52 @@
+@import "../../../../public_html/css/bootstrap/variables.less";
+
+.utp {
+    .container {
+        padding: 0 4rem;
+    }
+}
+
+#utp-slider {
+
+    padding: 2rem 0;
+
+
+    .slick-arrow {
+        position: absolute;
+        top: 16rem;
+        cursor: pointer;
+
+        &.arr-left { left: -3rem;}
+        &.arr-right { right: -3rem;}
+    }
+
+    .item-wrap {
+
+        padding: 1.5rem;
+
+        .item {
+            box-shadow: 0 0 1rem rgba(0,0,0, 0.5);
+            min-height: 32rem;
+            text-align: center;
+            padding: 4rem;
+            border-radius: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .title {
+                font-size: 1.8rem;
+                color: @green-light;
+                text-transform: uppercase;
+                margin-bottom: 3rem;
+                font-weight: 700;
+            }
+
+            button {
+                min-width: 19rem;
+            }
+        }
+    }
+}

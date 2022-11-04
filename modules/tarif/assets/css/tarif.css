@@ -1,0 +1,360 @@
+.gruzoperevozki-title {
+  text-align: center;
+  color: #94C021;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+#gruzoperevozki-tab,
+#pereezdi-tab {
+  border-bottom: inherit;
+  margin: 3rem 0 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #gruzoperevozki-tab,
+  #pereezdi-tab {
+    flex-flow: column;
+  }
+  #gruzoperevozki-tab li a,
+  #pereezdi-tab li a {
+    padding: 1.2rem 4rem;
+    margin-bottom: 2rem;
+  }
+}
+#gruzoperevozki-tab li a,
+#pereezdi-tab li a {
+  border: 1px solid #94C021;
+  background: inherit;
+  border-radius: 4rem;
+  color: #94C021;
+  font-weight: 500;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+}
+#gruzoperevozki-tab li.active a,
+#pereezdi-tab li.active a,
+#gruzoperevozki-tab li :hover a,
+#pereezdi-tab li :hover a {
+  border: inherit;
+  background: #94C021;
+  color: white;
+}
+#tab-mezh-slider,
+#tab-gorod-slider {
+  padding-top: 2rem;
+}
+#tab-mezh-slider .slick-list,
+#tab-gorod-slider .slick-list {
+  padding-top: 2rem !important;
+}
+#tab-mezh-slider .item-wrap,
+#tab-gorod-slider .item-wrap {
+  padding: 0 1rem;
+}
+#tab-mezh-slider .item-wrap .panel,
+#tab-gorod-slider .item-wrap .panel {
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  min-height: 43rem;
+  border-radius: 1rem;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading,
+#tab-gorod-slider .item-wrap .panel .panel-heading {
+  position: relative;
+  background-color: inherit;
+  border-bottom: 1px solid #94C021;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading .title,
+#tab-gorod-slider .item-wrap .panel .panel-heading .title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading .price,
+#tab-gorod-slider .item-wrap .panel .panel-heading .price {
+  font-size: 2.8rem;
+  color: #94C021;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading .text1 pre,
+#tab-gorod-slider .item-wrap .panel .panel-heading .text1 pre {
+  background: inherit;
+  border: inherit;
+  font-size: 1.6rem;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading .text2,
+#tab-gorod-slider .item-wrap .panel .panel-heading .text2 {
+  color: #94C021;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#tab-mezh-slider .item-wrap .panel .panel-heading .disclaimer,
+#tab-gorod-slider .item-wrap .panel .panel-heading .disclaimer {
+  margin-top: 1rem;
+}
+#tab-mezh-slider .item-wrap .panel .panel-body,
+#tab-gorod-slider .item-wrap .panel .panel-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 27rem;
+}
+#tab-mezh-slider .item-wrap .panel .panel-body img,
+#tab-gorod-slider .item-wrap .panel .panel-body img {
+  /*margin-bottom: 2rem;*/
+}
+#tab-mezh-slider .item-wrap .panel .panel-body button,
+#tab-gorod-slider .item-wrap .panel .panel-body button {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+#tab-mezh-slider .item-wrap .panel:hover .panel-heading,
+#tab-gorod-slider .item-wrap .panel:hover .panel-heading {
+  background-color: #94C021;
+  color: white;
+}
+#tab-mezh-slider .item-wrap .panel:hover .panel-heading .title,
+#tab-gorod-slider .item-wrap .panel:hover .panel-heading .title {
+  color: white;
+}
+#tab-mezh-slider .item-wrap .panel:hover .panel-heading .price,
+#tab-gorod-slider .item-wrap .panel:hover .panel-heading .price {
+  color: #FFE634;
+}
+#tab-mezh-slider .item-wrap .panel:hover .panel-heading .text2,
+#tab-gorod-slider .item-wrap .panel:hover .panel-heading .text2 {
+  color: #FFE634;
+}
+#tab-mezh-slider .item-wrap .panel:hover .panel-heading pre,
+#tab-gorod-slider .item-wrap .panel:hover .panel-heading pre {
+  color: white;
+}
+#pereezdi .tab-content {
+  padding-top: 4rem;
+}
+#pereezdi-slider {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#gruzchiki-slider .slick-list,
+#pereezdi .slick-list,
+#pereezdi-slider .slick-list,
+#takelazh-slider .slick-list,
+#vyvoz_musora-slider .slick-list {
+  padding-top: 2rem !important;
+}
+#gruzchiki-slider .item-wrap,
+#pereezdi .item-wrap,
+#pereezdi-slider .item-wrap,
+#takelazh-slider .item-wrap,
+#vyvoz_musora-slider .item-wrap {
+  padding: 0 1rem;
+}
+#gruzchiki-slider .item-wrap .panel,
+#pereezdi .item-wrap .panel,
+#pereezdi-slider .item-wrap .panel,
+#takelazh-slider .item-wrap .panel,
+#vyvoz_musora-slider .item-wrap .panel {
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-heading,
+#pereezdi .item-wrap .panel .panel-heading,
+#pereezdi-slider .item-wrap .panel .panel-heading,
+#takelazh-slider .item-wrap .panel .panel-heading,
+#vyvoz_musora-slider .item-wrap .panel .panel-heading {
+  overflow: hidden;
+  background-color: inherit;
+  min-height: 7em;
+  border-bottom: 1px solid white;
+}
+#gruzchiki-slider .item-wrap .panel .panel-heading .akcia,
+#pereezdi .item-wrap .panel .panel-heading .akcia,
+#pereezdi-slider .item-wrap .panel .panel-heading .akcia,
+#takelazh-slider .item-wrap .panel .panel-heading .akcia,
+#vyvoz_musora-slider .item-wrap .panel .panel-heading .akcia {
+  position: relative;
+  overflow: hidden;
+  width: 12rem;
+  height: 12rem;
+  color: white;
+  background: red;
+  padding-top: 10rem;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -7rem;
+  right: -30rem;
+  /*left: 1rem;*/
+}
+@media (max-width: 1200px) {
+  #gruzchiki-slider .item-wrap .panel .panel-heading .akcia,
+  #pereezdi .item-wrap .panel .panel-heading .akcia,
+  #pereezdi-slider .item-wrap .panel .panel-heading .akcia,
+  #takelazh-slider .item-wrap .panel .panel-heading .akcia,
+  #vyvoz_musora-slider .item-wrap .panel .panel-heading .akcia {
+    right: -24rem;
+  }
+}
+@media (max-width: 992px) {
+  #gruzchiki-slider .item-wrap .panel .panel-heading .akcia,
+  #pereezdi .item-wrap .panel .panel-heading .akcia,
+  #pereezdi-slider .item-wrap .panel .panel-heading .akcia,
+  #takelazh-slider .item-wrap .panel .panel-heading .akcia,
+  #vyvoz_musora-slider .item-wrap .panel .panel-heading .akcia {
+    right: -28rem;
+  }
+}
+@media (max-width: 768px) {
+  #gruzchiki-slider .item-wrap .panel .panel-heading .akcia,
+  #pereezdi .item-wrap .panel .panel-heading .akcia,
+  #pereezdi-slider .item-wrap .panel .panel-heading .akcia,
+  #takelazh-slider .item-wrap .panel .panel-heading .akcia,
+  #vyvoz_musora-slider .item-wrap .panel .panel-heading .akcia {
+    left: -8rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+#gruzchiki-slider .item-wrap .panel .panel-heading .title,
+#pereezdi .item-wrap .panel .panel-heading .title,
+#pereezdi-slider .item-wrap .panel .panel-heading .title,
+#takelazh-slider .item-wrap .panel .panel-heading .title,
+#vyvoz_musora-slider .item-wrap .panel .panel-heading .title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+#gruzchiki-slider .item-wrap .panel .panel-heading .title.akcia-title,
+#pereezdi .item-wrap .panel .panel-heading .title.akcia-title,
+#pereezdi-slider .item-wrap .panel .panel-heading .title.akcia-title,
+#takelazh-slider .item-wrap .panel .panel-heading .title.akcia-title,
+#vyvoz_musora-slider .item-wrap .panel .panel-heading .title.akcia-title {
+  margin-top: -12rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-heading .price,
+#pereezdi .item-wrap .panel .panel-heading .price,
+#pereezdi-slider .item-wrap .panel .panel-heading .price,
+#takelazh-slider .item-wrap .panel .panel-heading .price,
+#vyvoz_musora-slider .item-wrap .panel .panel-heading .price {
+  font-size: 2.8rem;
+  color: #94C021;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+#gruzchiki-slider .item-wrap .panel .panel-body,
+#pereezdi .item-wrap .panel .panel-body,
+#pereezdi-slider .item-wrap .panel .panel-body,
+#takelazh-slider .item-wrap .panel .panel-body,
+#vyvoz_musora-slider .item-wrap .panel .panel-body {
+  min-height: 7rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-body .text1,
+#pereezdi .item-wrap .panel .panel-body .text1,
+#pereezdi-slider .item-wrap .panel .panel-body .text1,
+#takelazh-slider .item-wrap .panel .panel-body .text1,
+#vyvoz_musora-slider .item-wrap .panel .panel-body .text1 {
+  color: #94C021;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-body .disclaimer,
+#pereezdi .item-wrap .panel .panel-body .disclaimer,
+#pereezdi-slider .item-wrap .panel .panel-body .disclaimer,
+#takelazh-slider .item-wrap .panel .panel-body .disclaimer,
+#vyvoz_musora-slider .item-wrap .panel .panel-body .disclaimer {
+  margin-top: 1rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-footer,
+#pereezdi .item-wrap .panel .panel-footer,
+#pereezdi-slider .item-wrap .panel .panel-footer,
+#takelazh-slider .item-wrap .panel .panel-footer,
+#vyvoz_musora-slider .item-wrap .panel .panel-footer {
+  border-top: 1px solid #94C021;
+  background-color: inherit;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#gruzchiki-slider .item-wrap .panel .panel-footer button,
+#pereezdi .item-wrap .panel .panel-footer button,
+#pereezdi-slider .item-wrap .panel .panel-footer button,
+#takelazh-slider .item-wrap .panel .panel-footer button,
+#vyvoz_musora-slider .item-wrap .panel .panel-footer button {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+#gruzchiki-slider .item-wrap .panel:hover .panel-heading,
+#pereezdi .item-wrap .panel:hover .panel-heading,
+#pereezdi-slider .item-wrap .panel:hover .panel-heading,
+#takelazh-slider .item-wrap .panel:hover .panel-heading,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-heading,
+#gruzchiki-slider .item-wrap .panel:hover .panel-body,
+#pereezdi .item-wrap .panel:hover .panel-body,
+#pereezdi-slider .item-wrap .panel:hover .panel-body,
+#takelazh-slider .item-wrap .panel:hover .panel-body,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-body {
+  background-color: #94C021;
+  color: white;
+}
+#gruzchiki-slider .item-wrap .panel:hover .panel-heading .title,
+#pereezdi .item-wrap .panel:hover .panel-heading .title,
+#pereezdi-slider .item-wrap .panel:hover .panel-heading .title,
+#takelazh-slider .item-wrap .panel:hover .panel-heading .title,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-heading .title,
+#gruzchiki-slider .item-wrap .panel:hover .panel-body .title,
+#pereezdi .item-wrap .panel:hover .panel-body .title,
+#pereezdi-slider .item-wrap .panel:hover .panel-body .title,
+#takelazh-slider .item-wrap .panel:hover .panel-body .title,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-body .title {
+  color: white;
+}
+#gruzchiki-slider .item-wrap .panel:hover .panel-heading .price,
+#pereezdi .item-wrap .panel:hover .panel-heading .price,
+#pereezdi-slider .item-wrap .panel:hover .panel-heading .price,
+#takelazh-slider .item-wrap .panel:hover .panel-heading .price,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-heading .price,
+#gruzchiki-slider .item-wrap .panel:hover .panel-body .price,
+#pereezdi .item-wrap .panel:hover .panel-body .price,
+#pereezdi-slider .item-wrap .panel:hover .panel-body .price,
+#takelazh-slider .item-wrap .panel:hover .panel-body .price,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-body .price {
+  color: #FFE634;
+}
+#gruzchiki-slider .item-wrap .panel:hover .panel-heading .text1,
+#pereezdi .item-wrap .panel:hover .panel-heading .text1,
+#pereezdi-slider .item-wrap .panel:hover .panel-heading .text1,
+#takelazh-slider .item-wrap .panel:hover .panel-heading .text1,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-heading .text1,
+#gruzchiki-slider .item-wrap .panel:hover .panel-body .text1,
+#pereezdi .item-wrap .panel:hover .panel-body .text1,
+#pereezdi-slider .item-wrap .panel:hover .panel-body .text1,
+#takelazh-slider .item-wrap .panel:hover .panel-body .text1,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-body .text1 {
+  color: white;
+}
+#gruzchiki-slider .item-wrap .panel:hover .panel-heading pre,
+#pereezdi .item-wrap .panel:hover .panel-heading pre,
+#pereezdi-slider .item-wrap .panel:hover .panel-heading pre,
+#takelazh-slider .item-wrap .panel:hover .panel-heading pre,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-heading pre,
+#gruzchiki-slider .item-wrap .panel:hover .panel-body pre,
+#pereezdi .item-wrap .panel:hover .panel-body pre,
+#pereezdi-slider .item-wrap .panel:hover .panel-body pre,
+#takelazh-slider .item-wrap .panel:hover .panel-body pre,
+#vyvoz_musora-slider .item-wrap .panel:hover .panel-body pre {
+  color: white;
+}
+/*# sourceMappingURL=tarif.css.map */
